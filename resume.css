@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+        font-size: 62.5%;
+
+}
+
+body{
+        background-color: #15161b;
+        color: white;
+        color: white;
+        margin: 0;
+        padding: 0;
+        perspective: 1px;
+        transform-style: preserve-3d;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+}
+
+header{
+        margin-top: 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 9%;
+        background-color: #1f1f1f;
+        filter: drop-shadow(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+}
+
+.logo{
+        font-size: 3rem;
+        color: white;
+        font-weight: 800;
+        cursor: pointer;
+        transition: 0.5s ease;
+}
+
+.logo:hover{
+        transform: scale(1.1);
+}
+
+nav a{
+        font-size: 1.5rem;
+        color: white;
+        margin-left: 4rem;
+        font-weight: 500;
+        transition: 0.3s ease;
+        border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+        color: #04D9FF;
+        border-bottom: 3px solid #04D9FF;
+}
+
+/*Resume Content*/
+h1 {
+        font-size: 60px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.763);
+    }
+    
+    .parallax-1 {
+        background: url('images/edu.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .parallax-2 {
+        background: url('images/edu.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .parallax-3 {
+        background: url('images/edu.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .parallax-4 {
+        background: url('images/edu.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .parallax-5 {
+        background: url('images/edu.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .parallax-inner {
+        padding: 10% 0;
+    }
+    
+    h2 {
+        font-size: 32px;
+        color: #555555d8;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin: 20px 0 10px;
+    }
+    
+    p {
+        font-size: 20px;
+        color: #9e9e9e;
+        line-height: 30px;
+        margin: 0 50px 40px;
+        text-align: center;
+    }
+    
+    span{
+        color: #bfbdbd;
+    }
+
+    i{
+        color: #c8c8c8;
+    }
+
+    p:nth-of-type(2),
+    p:nth-of-type(3) {
+        margin: 40px 50px;
+    }
+
+/*Gallery of Certificates*/
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 10px 0;
+    }
+    .single-content{
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        margin: 40px;
+        box-shadow: 0 2px 20px 2px rgba(0,0,0,0.3);
+    }
+    
+    .single-content::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease;
+        opacity: 0;
+    }
+    .single-content:hover::after {
+        position: absolute;
+        content: '';
+        transform: translateY(0);
+        background: linear-gradient(35deg, rgba(0, 0, 46, 0.8) 25%, rgba(0, 0, 46, 0));
+        z-index: 2;
+        width: 100%;
+        height: 100%;	
+        top: 0;
+        left: 0;
+        opacity: 1;	
+    }
+    .single-content img{
+        object-fit: cover;
+        min-height: 100%;
+        height: auto;
+        transition: all 0.5s ease;
+        width: 100%;
+        height: auto;    
+    }
+    .single-content:hover img{
+        transform: scale(1.3) translate(10%, 10%);
+    }
+    .single-content .info{
+        position: absolute;
+        z-index: 3;
+        opacity: 0;
+        overflow: hidden;
+        transform: translateY(0%);
+        transition: all 0.4s ease;
+        left: 5%;
+        right: 5%;
+        bottom: 5%;
+        padding: 10px 12px;
+   
+    }
+    .single-content:hover .info{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .single-content .info h2 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 23px;
+        margin-bottom: 10px;
+        color: aliceblue;	
+    }
+    .single-content .info h2, 
+    .single-content .info p{
+        transition: all 0.7s ease;
+        transform: translateX(-100%);   
+        overflow: hidden;
+    }
+    .single-content:hover .info h2, 
+    .single-content:hover .info p{
+        transform: translateX(0);
+    }
+    .single-content .info p{
+        font-size: 13px;
+        line-height: 17px;
+    }
