@@ -178,7 +178,7 @@ nav a.active{
 @media(max-device-width:720px){
 
     nav a{
-        font-size: 1rem;
+        font-size: 6pt;
         margin-left: 1rem;
     }
 
@@ -190,4 +190,9 @@ nav a.active{
         margin: 10px;
         box-shadow: 0 2px 20px 2px #0000004d;
     }
+    
+    .single-content .info h2{
+        font-size: 12pt;
+    }
+
 }

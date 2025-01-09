@@ -243,7 +243,7 @@ nav a.active{
     @media(max-device-width:720px){
 
         nav a{
-            font-size: 1rem;
+            font-size: 6pt;
             margin-left: 1rem;
         }
     
