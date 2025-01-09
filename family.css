@@ -72,6 +72,7 @@ nav a.active{
     justify-content: center;
     align-items: center;
     background-image: url('images/familybg.png');
+}
 
 .content-area{
     display: flex;
@@ -180,6 +181,11 @@ nav a.active{
         margin-left: 1rem;
     }
 
+    h1{
+        margin-top: 25px;
+        font-size: 45px;
+    }
+
     .single-content{
         width: 150px;
         height: 150px;
@@ -191,6 +197,6 @@ nav a.active{
 
     .single-content .info h2{
         font-size: 12pt;
-    }
 
+    }
 }
