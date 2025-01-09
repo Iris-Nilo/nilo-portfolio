@@ -72,8 +72,9 @@ nav a.active{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/myselfbg.png);
+    background-image: url('images/myselfbg.png');
 }
+
 .content-area{
     display: flex;
     justify-content: center;
