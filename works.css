@@ -11,75 +11,67 @@
 }
 
 html{
-        font-size: 62.5%;
-
+    font-size: 62.5%;
 }
 
 body{
-        background-color: #15161b;
-        color: white;
-        color: white;
-        margin: 0;
-        padding: 0;
-        perspective: 1px;
-        transform-style: preserve-3d;
-        height: 100%;
-        width: 100%;
-        overflow-y: scroll;
-        overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url(images/worksbg.png);
+    color:white; 
 }
 
 header{
-        margin-top: 0px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 1rem 9%;
-        background-color: #1f1f1f;
-        filter: drop-shadow(10px);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #f8f8f8;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
 .logo{
-        font-size: 3rem;
-        color: white;
-        font-weight: 800;
-        cursor: pointer;
-        transition: 0.5s ease;
-}
+    font-size: 3rem;
+    color: #ca9cff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    }
 
 .logo:hover{
-        transform: scale(1.1);
+    transform: scale(1.1);
+    color: #ffd596;
 }
 
 nav a{
-        font-size: 1.5rem;
-        color: white;
-        margin-left: 4rem;
-        font-weight: 500;
-        transition: 0.3s ease;
-        border-bottom: 3px solid transparent;
+    font-size: 1.5rem;
+    color: #ca9cff;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
 }
 
 nav a:hover,
 nav a.active{
-        color: #04D9FF;
-        border-bottom: 3px solid grey;
+    color: #ffd596;
+    border-bottom: 3px solid #ffd596;
 }
 
 :root {
-        /* Colors */
-        /*Color mode HSL(hue, saturation, lightness)*/
-        --white-color: hsl(170, 12%, 98%);
-        --gray-color: hsl(170, 4%, 60%);
-        --black-color: hsl(170, 12%, 8%);
+        /* Color of box */
+        --white-color: #fafafa;
+        --gray-color: #fff3f3;
+        --black-color: #ffffffbf;
       
-        /*Font and typography */
-        /*.5rem = 8px | 1rem = 16px ...*/
+        /*Font */
         --body-font: "Bona Nova", serif;
         --normal-font-size: .938rem;
       }
@@ -157,6 +149,7 @@ nav a.active{
       .card__title {
         font-size: var(--normal-font-size);
         font-weight: 400;
+        color: #ac63ff;
       }
       
       .card__bg {
@@ -192,6 +185,7 @@ nav a.active{
         font-size: 1.25rem;
         transition: transform .4s;
       }
+
       .card__button:hover i {
         transform: translateX(.5rem);
       }
@@ -212,16 +206,19 @@ nav a.active{
       
       .card__article:hover .card__bg {
         transform: scale(1);
+        color: #a45df6;
       }
       
       .card__article:hover .card__button {
         transform: translateY(-3.75rem);
         opacity: 1;
         pointer-events: initial;
+        color: #a962f9;
       }
       
       /* Small screens */
       @media screen and (max-width: 300px) {
+        
         .container {
           margin-inline: 1rem;
         }
@@ -242,4 +239,5 @@ nav a.active{
         .card__img {
           width: 220px;
         }
+  
       }

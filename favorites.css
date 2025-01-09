@@ -11,73 +11,71 @@
 }
 
 html{
-        font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body{
-        background-color: black;
-        color: white;
-        overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url(images/bg.png);
+    color:white; 
 }
 
 header{
-        margin-top: 0px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 1rem 9%;
-        background-color: #1f1f1f;
-        filter: drop-shadow(10px);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #f8f8f8;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
 .logo{
-        font-size: 3rem;
-        color: white;
-        font-weight: 800;
-        cursor: pointer;
-        transition: 0.5s ease;
-}
+    font-size: 3rem;
+    color: #ca9cff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    }
 
 .logo:hover{
-        transform: scale(1.1);
+    transform: scale(1.1);
+    color: #ffd596;
 }
 
 nav a{
-        font-size: 1.5rem;
-        color: white;
-        margin-left: 4rem;
-        font-weight: 500;
-        transition: 0.3s ease;
-        border-bottom: 3px solid transparent;
+    font-size: 1.5rem;
+    color: #ca9cff;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
 }
 
 nav a:hover,
 nav a.active{
-        color: #04D9FF;
-        border-bottom: 3px solid #04D9FF;
+    color: #ffd596;
+    border-bottom: 3px solid #ffd596;
 }
 
-    section{
-        min-height: 100vh;
-        padding: 5rem 9% 5rem;
-    }
-
-    .home{
+.home{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 8rem;
         background-color: black;
-    }
+}
 
-    span{
+span{
         color: grey;
-    }
+}
     
 .wrapper {
     width: 100%;
@@ -116,8 +114,8 @@ nav a.active{
 }
 
 .card > .row > .icon {
-    background: #223;
-    color: white;
+    background: #c08aff;
+    color: #ffffff;
     border-radius: 50%;
     width: 50px;
     display: flex;
@@ -180,4 +178,4 @@ input:checked + label .description {
         background-image: url('images/Fav5.png');
     }
 
-    
+
