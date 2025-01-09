@@ -183,11 +183,12 @@ nav a.active{
     }
 
     .single-content{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         overflow: hidden;
         position: relative;
-        margin: 5px;
+        margin: 10px;
         box-shadow: 0 2px 20px 2px #0000004d;
     }
+
 }
