@@ -175,4 +175,19 @@ nav a.active{
     line-height: 17px;
 }
 
+@media(max-device-width:720px){
 
+    nav a{
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .single-content{
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+        margin: 10px;
+        box-shadow: 0 2px 20px 2px #0000004d;
+    }
+}

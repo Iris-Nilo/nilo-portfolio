@@ -216,7 +216,7 @@ nav a.active{
         color: #a962f9;
       }
       
-      /* Small screens */
+
       @media screen and (max-width: 300px) {
         
         .container {
@@ -228,7 +228,20 @@ nav a.active{
         }
       }
       
-      /* Large screens */
+      @media(max-device-width:720px){
+
+        nav a{
+            font-size: 1rem;
+            margin-left: 1rem;
+        }
+
+        .card__container{
+          margin-top: 30px;
+        }
+    
+    }
+
+
       @media screen and (min-width: 1120px) {
         .container {
           height: 100vh;
